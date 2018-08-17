@@ -30,7 +30,7 @@ Hasta la fecha (17/8/18) de todas las libreras de *bajo nivel* probadas (control
 
 ->Falta una librería por probar: [MD_Parola][id4], la cual **ya hace uso de la misma que utilizamos nosotros**, con lo cual, debería ser compatible y quizás **ya implemente lo que buscamos**.
 
-![Alt text](https://github.com/Colm3na/Clockchain/img/BlockNumberExample.jpg)
+![Alt text](https://raw.githubusercontent.com/Colm3na/Clockchain/master/img/BlockNumberExample.jpg)
 
 
 # Referencias
