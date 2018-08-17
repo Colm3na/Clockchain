@@ -13,7 +13,7 @@ Necesitaremos:
   ![Alt text](https://www.makerfabs.com/image/cache/makerfabs/NodeMcu-Lua%20Based%20ESP8266%20CP2102%20Module/NodeMcu-Lua%20Based%20ESP8266%20CP2102%20Module_1-1000x750.JPG)
   
   # Conexión entre módulos
-  *Por documentar*
+  *Por documentar*. Ver código de ejemplo
   
 # Software
 
@@ -30,7 +30,7 @@ Hasta la fecha (17/8/18) de todas las libreras de *bajo nivel* probadas (control
 
 ->Falta una librería por probar: [MD_Parola][id4], la cual **ya hace uso de la misma que utilizamos nosotros**, con lo cual, debería ser compatible y quizás **ya implemente lo que buscamos**.
 
-![Alt text](./img/BlockNumberExample.jpg)
+![Alt text](https://github.com/Colm3na/Clockchain/img/BlockNumberExample.jpg)
 
 
 # Referencias
