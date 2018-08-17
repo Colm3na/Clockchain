@@ -30,6 +30,8 @@ Hasta la fecha (17/8/18) de todas las libreras de *bajo nivel* probadas (control
 
 ->Falta una librería por probar: [MD_Parola][id4], la cual **ya hace uso de la misma que utilizamos nosotros**, con lo cual, debería ser compatible y quizás **ya implemente lo que buscamos**.
 
+![Alt text](./img/BlockNumberExample.jpg)
+
 
 # Referencias
   1. [Cómo programar NodeMCU con el IDE de Arduino][id5].
