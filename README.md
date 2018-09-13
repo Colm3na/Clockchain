@@ -1,10 +1,10 @@
 # Clockchain
-Firmware para un reloj de pared conectado a la blockchain. Implementado mediante una matriz de 32x32 LED's y gobernado por un NodeMCU (esp8266)
+Firmware para un reloj de pared conectado a la blockchain. Implementado mediante una matriz de 32x32 LED's y gobernado por NodeMCU (esp8266)
 
 # Hardware
 
 Necesitaremos:
-  1. Módulo de 32x32 LED's. En el código utilizaremos el módulo [FC-16][id]
+  1. Módulo de 32x32 LED's. En el código utilizaremos el módulo [FC-16][id]. Utilizan drivers MAX7219 para el control de cada módulo de 8x8 píxeles.
   
   [id]: https://www.amazon.es/AptoFun-Matrix-MAX7219-Display-Arduino/dp/B01LOMZH8C/ref=sr_1_19?s=electronics "FC-16 Module"
   ![Alt text](https://images-na.ssl-images-amazon.com/images/I/81sA5pp64PL._SX425_.jpg)
@@ -13,7 +13,16 @@ Necesitaremos:
   ![Alt text](https://www.makerfabs.com/image/cache/makerfabs/NodeMcu-Lua%20Based%20ESP8266%20CP2102%20Module/NodeMcu-Lua%20Based%20ESP8266%20CP2102%20Module_1-1000x750.JPG)
   
   # Conexión entre módulos
-  *Por documentar*. Ver código de ejemplo
+  
+  NodeMCU <-> Max7219 (FC-16)
+  
+      VIN <-> VIN ***
+      GND <-> GND
+      D2  <-> CS
+      D5  <-> CLK
+      D7  <-> DIN
+      
+  *** Al conectarlo de este modo, se alimentan los leds desde el puerto USB y no desde la placa NodeMCU. Evita quemar el regulador de tensión integrado en ésta.
   
 # Software
 La mejor librería probada hasta la fecha (10/9/18) es la librería de de Adafruit [MAX72XX][id2].
