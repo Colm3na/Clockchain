@@ -38,7 +38,13 @@ Adicionalmente, deberás añadir el siguiente código a la **función setup** pa
   }
 `
 
-**Importante**: Edita el archivo `Secrets.h`, añadiendo tus **credenciales Wifi** y modificando la url de la **api de etherscan**, sustituyendo "YouApiKeyToken" por el [token obtenido en etherscan][id8].
+**Importante**: Crear el archivo `Secrets.h` tal como se indica a continuación, añadiendo tus **credenciales Wifi** y modificando la url de la **api de etherscan**, sustituyendo "YouApiKeyToken" por el [token obtenido en etherscan][id8].
+
+      // Wifi definitions
+      #define SECRET_SSID "Mafred"
+      #define SECRET_PASS "1h5$#DMe8g"
+      // Etherscan API URL
+      #define BLOCKURL "http://api.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=BXNWDYJKNN9RS2M7IAR2XW12UB6J3E35NA";
 
 # Referencias
   1. [Cómo programar NodeMCU con el IDE de Arduino][id5].
