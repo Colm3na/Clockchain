@@ -1,6 +1,8 @@
 # Clockchain
 Firmware para un reloj de pared conectado a la blockchain. Implementado mediante una matriz de 32x32 LED's y gobernado por NodeMCU (esp8266)
 
+![Alt Text](https://github.com/Colm3na/Clockchain/blob/master/img/firstFunctional.gif?raw=true)
+
 # Hardware
 
 Necesitaremos:
@@ -26,8 +28,9 @@ Necesitaremos:
   
 # Software
 La mejor librería probada hasta la fecha (10/9/18) es la librería de de Adafruit [MAX72XX][id2].
-Hay que añadir el siguiente código a la **función setup** para la correcta visualización de la pantalla.
+Deberás añadirla junto a la librería [Adafruit GFX][id7] tal como especifican en sus respectivas guías.
 
+Adicionalmente, deberás añadir el siguiente código a la **función setup** para la correcta visualización de la pantalla:
 `
   for(int i=0; i<16; i++)
   {
@@ -35,9 +38,7 @@ Hay que añadir el siguiente código a la **función setup** para la correcta vi
   }
 `
 
-
-![Alt text](https://raw.githubusercontent.com/Colm3na/Clockchain/master/img/BlockNumberExample.jpg)
-
+**Importante**: Edita el archivo `Secrets.h`, añadiendo tus **credenciales Wifi** y modificando la url de la **api de etherscan**, sustituyendo "YouApiKeyToken" por el [token obtenido en etherscan][id8].
 
 # Referencias
   1. [Cómo programar NodeMCU con el IDE de Arduino][id5].
@@ -52,3 +53,4 @@ Hay que añadir el siguiente código a la **función setup** para la correcta vi
 [id5]: https://programarfacil.com/esp8266/como-programar-nodemcu-ide-arduino/ "NodeMCU"
 [id6]: https://github.com/markruys/arduino-Max72xxPanel
 [id7]: https://github.com/adafruit/Adafruit-GFX-Library
+[id8]: https://etherscan.io/apis
