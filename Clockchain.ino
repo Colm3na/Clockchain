@@ -90,15 +90,16 @@ void displayTime(int times)
   String hour = String(timeinfo->tm_hour);
   String minute = String(timeinfo->tm_min);
   String day = String(timeinfo->tm_mday);
-  String month = String(timeinfo->tm_mon);
+  String month = String(timeinfo->tm_mon + 1);
   String year = String(timeinfo->tm_year - 100); // tm_year returns the number of years since 1900
 
   // Adjust one-digit number to two-digits number adding a zero
   hour = (hour.length()<2)?("0"+hour):(hour);
   minute = (minute.length()<2)?("0"+minute):(minute);
+  month = (month.length()<2)?("0"+month):(month);
   
   matrix.fillScreen(LOW);
-  drawText(1,20,String(day+"/"+year)); // Prints date
+  drawText(1,20,String(day+"/"+month)); // Prints date
 
   // Prints time with blinking dots
   for(int i=0;i<times;i++)
